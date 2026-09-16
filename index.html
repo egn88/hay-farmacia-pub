@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-DNeAu94U.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-WfrEII86.css">
+    <script type="module" crossorigin src="/assets/index-Ca_ImSGj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bom893bH.css">
   <link rel="manifest" href="/manifest.webmanifest"></head>
   <body>
     <div id="map" aria-label="Mapa de farmacias de guardia"></div>
@@ -35,6 +35,9 @@
         <h1>Hay farmacia</h1>
       </div>
       <div class="topbar-actions">
+      <button class="icon-btn" id="search-btn" type="button" aria-label="Buscar municipio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
       <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambiar tema"></button>
       <button class="icon-btn" id="about-btn" type="button" aria-label="Acerca de">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
@@ -76,6 +79,18 @@
     </section>
 
     <dialog id="about" class="about-dialog"></dialog>
+    <dialog id="search" class="about-dialog search-dialog">
+      <form method="dialog" class="about">
+        <header>
+          <h2>Buscar municipio</h2>
+          <button class="icon-btn" type="submit" aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+          </button>
+        </header>
+        <input id="search-input" class="search-input" type="search" autocomplete="off" placeholder="Escribe un municipio" aria-label="Municipio" />
+        <ul id="search-results" class="search-results"></ul>
+      </form>
+    </dialog>
 
   </body>
 </html>
