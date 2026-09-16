@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Hay farmacia</title>
+    <meta name="description" content="La farmacia de guardia abierta más cerca de ti, con ruta en un toque." />
+    <meta name="application-name" content="Hay farmacia" />
+    <meta name="apple-mobile-web-app-title" content="Hay farmacia" />
+    <meta property="og:title" content="Hay farmacia" />
+    <meta property="og:description" content="La farmacia de guardia abierta más cerca de ti, con ruta en un toque." />
+    <meta property="og:url" content="https://hayfarmacia.es/" />
+    <meta property="og:image" content="https://hayfarmacia.es/icons/icon-512.png" />
+    <link rel="canonical" href="https://hayfarmacia.es/" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#f7f9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c1410" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="/icons/cross.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-Q3W5hwGw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DkbNzNb7.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="map" aria-label="Mapa de farmacias de guardia"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="cross lit" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6a1 1 0 0 1 1 1v5h5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-5H3a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h5V4a1 1 0 0 1 1-1z"/></svg></span>
+        <h1>Hay farmacia</h1>
+      </div>
+      <div class="topbar-actions">
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambiar tema"></button>
+      <button class="icon-btn" id="about-btn" type="button" aria-label="Acerca de">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+      </div>
+    </header>
+
+    <div id="crosshair" class="crosshair" hidden aria-hidden="true"></div>
+    <div id="pick-bar" class="pick-bar" hidden>
+      <button class="btn btn-ghost" id="pick-cancel" type="button">Cancelar</button>
+      <button class="btn btn-primary" id="pick-confirm" type="button">Buscar aquí</button>
+    </div>
+
+    <button class="fab" id="locate" type="button" aria-label="Usar mi ubicación">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1.5v3.5M12 19v3.5M1.5 12H5M19 12h3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <section id="sheet" class="sheet" data-state="peek" aria-label="Farmacias cercanas">
+      <div id="sheet-handle" class="sheet-handle" role="button" tabindex="0" aria-label="Mostrar u ocultar la lista">
+        <span class="grip" aria-hidden="true"></span>
+        <h2 id="sheet-title" class="sheet-title">Cargando guardias</h2>
+      </div>
+      <div id="sheet-scroll" class="sheet-scroll">
+        <div id="sheet-body" class="sheet-body">
+          <noscript><p class="lead">Esta app necesita JavaScript para el mapa. Sin él, consulta las <a href="/farmacias-de-guardia/">farmacias de guardia por provincia</a>.</p></noscript>
+        </div>
+        <nav class="site-links" aria-label="Farmacias de guardia por provincia">
+          <!-- province-links -->
+<h2>Farmacias de guardia por provincia</h2>
+<ul><li><a href="/farmacias-de-guardia/albacete/">Albacete</a></li><li><a href="/farmacias-de-guardia/avila/">Ávila</a></li><li><a href="/farmacias-de-guardia/badajoz/">Badajoz</a></li><li><a href="/farmacias-de-guardia/burgos/">Burgos</a></li><li><a href="/farmacias-de-guardia/cadiz/">Cádiz</a></li><li><a href="/farmacias-de-guardia/ceuta/">Ceuta</a></li><li><a href="/farmacias-de-guardia/ciudad-real/">Ciudad Real</a></li><li><a href="/farmacias-de-guardia/cuenca/">Cuenca</a></li><li><a href="/farmacias-de-guardia/guadalajara/">Guadalajara</a></li><li><a href="/farmacias-de-guardia/la-rioja/">La Rioja</a></li><li><a href="/farmacias-de-guardia/madrid/">Madrid</a></li><li><a href="/farmacias-de-guardia/malaga/">Málaga</a></li><li><a href="/farmacias-de-guardia/melilla/">Melilla</a></li><li><a href="/farmacias-de-guardia/navarra/">Navarra</a></li><li><a href="/farmacias-de-guardia/salamanca/">Salamanca</a></li><li><a href="/farmacias-de-guardia/toledo/">Toledo</a></li><li><a href="/farmacias-de-guardia/zaragoza/">Zaragoza</a></li></ul>
+<p><a href="/farmacias-de-guardia/">Todas las provincias y municipios</a></p>
+<!-- /province-links -->
+        </nav>
+      </div>
+    </section>
+
+    <dialog id="about" class="about-dialog"></dialog>
+
+  </body>
+</html>
