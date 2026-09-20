@@ -21,8 +21,19 @@
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
     <link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <script type="module" crossorigin src="/assets/index-XFwKekjG.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D7_yU4An.css">
+    <!-- The pointer names the hashed data files, so nothing else can be fetched until it lands, and
+         it used to wait for the module to download, parse and run: about half a second of the chain
+         on a slow connection, spent doing nothing. A rel=preload does not help here, because the
+         revalidating fetch below never matches the preloaded entry and the file is simply requested
+         twice. Issuing the real request here is the same request, only sooner; load.ts picks up the
+         promise and falls back to asking for it itself. -->
+    <script>
+      window.__latest = fetch('/data/latest.json', { cache: 'no-cache' })
+        .then(r => (r.ok ? r.json() : Promise.reject(new Error('latest.json: HTTP ' + r.status))));
+      window.__latest.catch(() => {}); // load.ts handles it; this only silences the unhandled rejection
+    </script>
+    <script type="module" crossorigin src="/assets/index-Bxe1wIPX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D3vhVUAm.css">
   <link rel="manifest" href="/manifest.webmanifest"></head>
   <body>
     <div id="map" aria-label="Mapa de farmacias de guardia"></div>
