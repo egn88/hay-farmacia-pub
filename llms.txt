@@ -1,0 +1,60 @@
+# Hay farmacia
+
+> Farmacias de guardia abiertas hoy en España, por municipio, con horario, dirección, teléfono y ruta. Los turnos se recogen cada día de los colegios oficiales de farmacéuticos y las consejerías de sanidad, y cubren 44 provincias y 3060 farmacias de guardia hoy y mañana.
+
+Los datos se actualizan dos veces al día (última actualización: 20 de septiembre a las 22:40). Cada página de municipio abre con la respuesta directa —qué farmacia está de guardia, dónde y a qué hora— y después el detalle de cada turno.
+
+Aviso importante: los turnos pueden cambiar a última hora y algunas provincias solo publican sus guardias en PDF, así que no aparecen aquí. Antes de desplazarse de noche conviene llamar a la farmacia para confirmar. Una "guardia localizada" significa que el farmacéutico atiende previo aviso telefónico, no que la puerta esté abierta.
+
+## Páginas
+
+- [Farmacias de guardia por provincia](https://hayfarmacia.es/farmacias-de-guardia/): índice de las 44 provincias con datos, y desde cada una sus municipios.
+- [Mapa](https://hayfarmacia.es/): la farmacia de guardia abierta más cercana a un punto. Acepta `/?at=LAT,LNG` para centrar el mapa en unas coordenadas.
+- [Acerca de](https://hayfarmacia.es/acerca/): fuentes oficiales, método de recogida y límites de los datos.
+
+## Provincias
+
+- [A Coruña](https://hayfarmacia.es/farmacias-de-guardia/a-coruna/): 43 municipios con guardia publicada.
+- [Álava](https://hayfarmacia.es/farmacias-de-guardia/alava/): 12 municipios con guardia publicada.
+- [Albacete](https://hayfarmacia.es/farmacias-de-guardia/albacete/): 41 municipios con guardia publicada.
+- [Alicante](https://hayfarmacia.es/farmacias-de-guardia/alicante/): 59 municipios con guardia publicada.
+- [Almería](https://hayfarmacia.es/farmacias-de-guardia/almeria/): 47 municipios con guardia publicada.
+- [Asturias](https://hayfarmacia.es/farmacias-de-guardia/asturias/): 87 municipios con guardia publicada.
+- [Ávila](https://hayfarmacia.es/farmacias-de-guardia/avila/): 20 municipios con guardia publicada.
+- [Badajoz](https://hayfarmacia.es/farmacias-de-guardia/badajoz/): 41 municipios con guardia publicada.
+- [Baleares](https://hayfarmacia.es/farmacias-de-guardia/baleares/): 48 municipios con guardia publicada.
+- [Barcelona](https://hayfarmacia.es/farmacias-de-guardia/barcelona/): 45 municipios con guardia publicada.
+- [Bizkaia](https://hayfarmacia.es/farmacias-de-guardia/bizkaia/): 11 municipios con guardia publicada.
+- [Burgos](https://hayfarmacia.es/farmacias-de-guardia/burgos/): 21 municipios con guardia publicada.
+- [Cádiz](https://hayfarmacia.es/farmacias-de-guardia/cadiz/): 48 municipios con guardia publicada.
+- [Cantabria](https://hayfarmacia.es/farmacias-de-guardia/cantabria/): 31 municipios con guardia publicada.
+- [Castellón](https://hayfarmacia.es/farmacias-de-guardia/castellon/): 46 municipios con guardia publicada.
+- [Ciudad Real](https://hayfarmacia.es/farmacias-de-guardia/ciudad-real/): 53 municipios con guardia publicada.
+- [Córdoba](https://hayfarmacia.es/farmacias-de-guardia/cordoba/): 76 municipios con guardia publicada.
+- [Cuenca](https://hayfarmacia.es/farmacias-de-guardia/cuenca/): 44 municipios con guardia publicada.
+- [Gipuzkoa](https://hayfarmacia.es/farmacias-de-guardia/gipuzkoa/): 29 municipios con guardia publicada.
+- [Girona](https://hayfarmacia.es/farmacias-de-guardia/girona/): 63 municipios con guardia publicada.
+- [Granada](https://hayfarmacia.es/farmacias-de-guardia/granada/): 59 municipios con guardia publicada.
+- [Guadalajara](https://hayfarmacia.es/farmacias-de-guardia/guadalajara/): 25 municipios con guardia publicada.
+- [Huesca](https://hayfarmacia.es/farmacias-de-guardia/huesca/): 37 municipios con guardia publicada.
+- [La Rioja](https://hayfarmacia.es/farmacias-de-guardia/la-rioja/): 10 municipios con guardia publicada.
+- [Las Palmas](https://hayfarmacia.es/farmacias-de-guardia/las-palmas/): 29 municipios con guardia publicada.
+- [León](https://hayfarmacia.es/farmacias-de-guardia/leon/): 30 municipios con guardia publicada.
+- [Lleida](https://hayfarmacia.es/farmacias-de-guardia/lleida/): 21 municipios con guardia publicada.
+- [Madrid](https://hayfarmacia.es/farmacias-de-guardia/madrid/): 49 municipios con guardia publicada.
+- [Málaga](https://hayfarmacia.es/farmacias-de-guardia/malaga/): 61 municipios con guardia publicada.
+- [Melilla](https://hayfarmacia.es/farmacias-de-guardia/melilla/): 1 municipios con guardia publicada.
+- [Murcia](https://hayfarmacia.es/farmacias-de-guardia/murcia/): 44 municipios con guardia publicada.
+- [Navarra](https://hayfarmacia.es/farmacias-de-guardia/navarra/): 40 municipios con guardia publicada.
+- [Ourense](https://hayfarmacia.es/farmacias-de-guardia/ourense/): 13 municipios con guardia publicada.
+- [Pontevedra](https://hayfarmacia.es/farmacias-de-guardia/pontevedra/): 34 municipios con guardia publicada.
+- [Salamanca](https://hayfarmacia.es/farmacias-de-guardia/salamanca/): 22 municipios con guardia publicada.
+- [Sevilla](https://hayfarmacia.es/farmacias-de-guardia/sevilla/): 99 municipios con guardia publicada.
+- [Soria](https://hayfarmacia.es/farmacias-de-guardia/soria/): 14 municipios con guardia publicada.
+- [Tarragona](https://hayfarmacia.es/farmacias-de-guardia/tarragona/): 40 municipios con guardia publicada.
+- [Teruel](https://hayfarmacia.es/farmacias-de-guardia/teruel/): 32 municipios con guardia publicada.
+- [Toledo](https://hayfarmacia.es/farmacias-de-guardia/toledo/): 57 municipios con guardia publicada.
+- [Valencia](https://hayfarmacia.es/farmacias-de-guardia/valencia/): 47 municipios con guardia publicada.
+- [Valladolid](https://hayfarmacia.es/farmacias-de-guardia/valladolid/): 19 municipios con guardia publicada.
+- [Zamora](https://hayfarmacia.es/farmacias-de-guardia/zamora/): 1 municipios con guardia publicada.
+- [Zaragoza](https://hayfarmacia.es/farmacias-de-guardia/zaragoza/): 48 municipios con guardia publicada.
